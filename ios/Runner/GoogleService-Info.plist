@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCnDqw605Z7DTZIRpP8Fs5y9_JSCPY6Jvc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>242115337877</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.mosuito</string>
+	<key>PROJECT_ID</key>
+	<string>mosquito2-ba0c7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mosquito2-ba0c7.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:242115337877:ios:1d4b9c1ed253048fc0059c</string>
+</dict>
+</plist>

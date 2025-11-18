@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "242115337877",
+    "project_id": "mosquito2-ba0c7",
+    "storage_bucket": "mosquito2-ba0c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242115337877:android:f05c7cd73b5c6c04c0059c",
+        "android_client_info": {
+          "package_name": "com.example.mosquito"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-xtsgBqsut8J_smSJFJlLiujgGCUe8kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242115337877:android:366f7b190fb69eeac0059c",
+        "android_client_info": {
+          "package_name": "com.example.mosuito"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-xtsgBqsut8J_smSJFJlLiujgGCUe8kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,11 +15,8 @@ class user_Page extends StatefulWidget {
 class _user_Page extends State<user_Page> {
   TimeOfDay? _selectedTime;
 
-  // Firestore 인스턴스 생성
-  // 이 시점에는 main.dart에서 이미 Firebase.initializeApp()이 호출된 후여야 합니다.
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  // TimePicker를 열고 시간을 선택하는 함수
   Future<void> _selectTime(BuildContext context) async {
     final TimeOfDay? pickedTime = await showTimePicker(
       context: context,
@@ -32,9 +29,8 @@ class _user_Page extends State<user_Page> {
     }
   }
 
-  // [수정됨] Firestore에 알림 설정 저장 (서버리스)
   Future<void> sendDataToServer(TimeOfDay? selectedTime) async {
-    // 시간이 선택되지 않았으면 사용자에게 알림
+
     if (selectedTime == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('먼저 알림 시간을 설정해주세요.')),
@@ -71,7 +67,6 @@ class _user_Page extends State<user_Page> {
     }
   }
 
-  // [수정됨] Firestore에서 알림 설정 삭제 (서버리스)
   Future<void> delData() async {
     String? deviceToken = await getDeviceToken();
 
@@ -83,7 +78,6 @@ class _user_Page extends State<user_Page> {
     }
 
     try {
-      // Firestore 'scheduledTokens' 컬렉션에서 해당 토큰 문서 삭제
       await _firestore.collection('scheduledTokens').doc(deviceToken).delete();
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('알림이 중지되었습니다.')),
@@ -98,7 +92,6 @@ class _user_Page extends State<user_Page> {
   // 디바이스 토큰 추출
   Future<String?> getDeviceToken() async {
     String? token = await FirebaseMessaging.instance.getToken();
-    print("Device Token: $token"); // 토큰 확인용 로그
     return token;
   }
 

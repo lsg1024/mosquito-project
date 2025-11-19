@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'firebase_options.dart';
+import "firebase_options.dart";
 import 'Intro_Page.dart';
 
 @pragma('vm:entry-point')
@@ -11,7 +11,6 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
         options: DefaultFirebaseOptions.currentPlatform
     );
   }
-  print("Handling a background message: ${message.messageId}");
 }
 
 Future<void> main() async {
@@ -20,7 +19,7 @@ Future<void> main() async {
   if (Firebase.apps.isEmpty) {
     await Firebase.initializeApp(
       name: "test",
-      options: DefaultFirebaseOptions.currentPlatform, // firebase_options.dart의 설정 사용
+      options: DefaultFirebaseOptions.currentPlatform,
     );
   }
 

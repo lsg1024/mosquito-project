@@ -47,4 +47,6 @@
 #### ├── MosData.dart        # 데이터 모델 클래스
 #### └── firebase_options.dart # Firebase 설정 파일
 
+### 다운로드 링크 (다운로드 가능)
+[서울시 모기예보제 애플리케이션 다운로드](https://drive.google.com/file/d/1fZuTdKZzFOowxu4vEKus1R_sqTARWzyz/view?usp=drive_link)
 

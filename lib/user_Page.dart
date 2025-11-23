@@ -160,7 +160,8 @@ class _user_Page extends State<user_Page> {
                                             "알림 시간 설정",
                                             style: TextStyle(
                                                 fontSize: 20,
-                                                fontWeight: FontWeight.bold),
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white),
                                           ),
                                         ))),
                                 Padding(
@@ -180,7 +181,8 @@ class _user_Page extends State<user_Page> {
                                             "알림 설정 완료",
                                             style: TextStyle(
                                                 fontSize: 20,
-                                                fontWeight: FontWeight.bold),
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white),
                                           ),
                                         ))),
                                 Padding(
@@ -200,7 +202,8 @@ class _user_Page extends State<user_Page> {
                                             "알림 중지",
                                             style: TextStyle(
                                                 fontSize: 20,
-                                                fontWeight: FontWeight.bold),
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white),
                                           ),
                                         ))),
                               ],
